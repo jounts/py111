@@ -59,4 +59,8 @@ def clear() -> None:
 
     :return: None
     """
+    global priority_que_dict
+
+    for i in range(11):
+        priority_que_dict[i].clear()
     return None
