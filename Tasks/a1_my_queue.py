@@ -24,7 +24,7 @@ def dequeue() -> Any:
 
     :return: dequeued element
     """
-    return None
+    return queue_list.pop(0) if queue_list else None
 
 
 def peek(ind: int = 0) -> Any:
