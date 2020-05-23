@@ -14,6 +14,7 @@ def enqueue(elem: Any) -> None:
     :return: Nothing
     """
     print(elem)
+    queue_list.append(elem)
     return None
 
 
