@@ -35,7 +35,7 @@ def peek(ind: int = 0) -> Any:
     :return: peeked element
     """
     print(ind)
-    return None
+    return queue_list[ind] if len(queue_list) > ind else None
 
 
 def clear() -> None:
