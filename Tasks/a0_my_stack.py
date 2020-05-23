@@ -53,4 +53,7 @@ def clear() -> None:
 
     :return: None
     """
+    global stack_list
+
+    stack_list.clear()
     return None
