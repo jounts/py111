@@ -5,7 +5,8 @@ Queue priorities are from 0 to 10
 """
 from typing import Any
 
-priority_que_dict = {i:[] for i in range(11)}
+PRIORITY_COUNT = 11
+priority_que_dict = {i:[] for i in range(PRIORITY_COUNT)}
 
 
 def enqueue(elem: Any, priority: int = 0) -> None:
@@ -17,7 +18,7 @@ def enqueue(elem: Any, priority: int = 0) -> None:
     """
     global priority_que_dict
 
-    for i in range(11):
+    for i in range(PRIORITY_COUNT):
         if priority == i:
             priority_que_dict[i].append(elem)
 
@@ -31,7 +32,7 @@ def dequeue() -> Any:
     :return: dequeued element
     """
     global priority_que_dict
-    for i in range(11):
+    for i in range(PRIORITY_COUNT):
         if priority_que_dict[i]:
             return priority_que_dict[i].pop(0)
     return None
@@ -46,7 +47,7 @@ def peek(ind: int = 0, priority: int = 0) -> Any:
     """
     global priority_que_dict
 
-    for i in range(11):
+    for i in range(PRIORITY_COUNT):
         if priority == i:
             if priority_que_dict[i]:
                 return priority_que_dict[i][ind]
@@ -61,6 +62,6 @@ def clear() -> None:
     """
     global priority_que_dict
 
-    for i in range(11):
+    for i in range(PRIORITY_COUNT):
         priority_que_dict[i].clear()
     return None
