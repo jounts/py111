@@ -30,6 +30,10 @@ def dequeue() -> Any:
 
     :return: dequeued element
     """
+    global priority_que_dict
+    for i in range(11):
+        if priority_que_dict[i]:
+            return priority_que_dict[i].pop(0)
     return None
 
 
