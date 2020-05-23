@@ -15,6 +15,12 @@ def enqueue(elem: Any, priority: int = 0) -> None:
     :param elem: element to be added
     :return: Nothing
     """
+    global priority_que_dict
+
+    for i in range(11):
+        if priority == i:
+            priority_que_dict[i].append(elem)
+
     return None
 
 
