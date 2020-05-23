@@ -18,9 +18,7 @@ def enqueue(elem: Any, priority: int = 0) -> None:
     """
     global priority_que_dict
 
-    for i in range(PRIORITY_COUNT):
-        if priority == i:
-            priority_que_dict[i].append(elem)
+    priority_que_dict[priority].append(elem)
 
     return None
 
