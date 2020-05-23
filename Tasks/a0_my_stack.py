@@ -28,10 +28,10 @@ def pop() -> Any:
     """
     global stack_list
 
-    if len(stack_list):
-        return None
-    else:
+    if stack_list:
         return stack_list.pop()
+    else:
+        return None
 
 
 def peek(ind: int = 0) -> Any:
