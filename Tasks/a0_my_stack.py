@@ -13,6 +13,9 @@ def push(elem: Any) -> None:
     :param elem: element to be pushed
     :return: Nothing
     """
+    global stack_list
+
+    stack_list.append(elem)
     print(elem)
     return None
 
