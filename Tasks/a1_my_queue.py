@@ -3,6 +3,8 @@ My little Queue
 """
 from typing import Any
 
+queue_list = []
+
 
 def enqueue(elem: Any) -> None:
     """
