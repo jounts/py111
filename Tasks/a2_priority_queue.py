@@ -5,6 +5,8 @@ Queue priorities are from 0 to 10
 """
 from typing import Any
 
+priority_que_dict = {i:[] for i in range(11)}
+
 
 def enqueue(elem: Any, priority: int = 0) -> None:
     """
