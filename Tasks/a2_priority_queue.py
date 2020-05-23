@@ -44,6 +44,12 @@ def peek(ind: int = 0, priority: int = 0) -> Any:
     :param ind: index of element (count from the beginning)
     :return: peeked element
     """
+    global priority_que_dict
+
+    for i in range(11):
+        if priority == i:
+            if priority_que_dict[i]:
+                return priority_que_dict[i][ind]
     return None
 
 
