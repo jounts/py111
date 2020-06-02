@@ -45,10 +45,8 @@ def peek(ind: int = 0, priority: int = 0) -> Any:
     """
     global priority_que_dict
 
-    for i in range(PRIORITY_COUNT):
-        if priority == i:
-            if priority_que_dict[i]:
-                return priority_que_dict[i][ind]
+    if priority_que_dict[priority]:
+        return priority_que_dict[priority][ind]
     return None
 
 
